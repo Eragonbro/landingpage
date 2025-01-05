@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US" class="dark">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta charset="utf-8" />
+        <meta name="Landing page" content="Now, we do a landing page" />
+        <title> Landing page example</title>
+        <!-- <link rel="stylesheet" href="style.css" />--> 
+        <link rel="stylesheet" href="output.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="flex justify-center dark:text-gray-200 font-poppins dark:bg-design-background-black min-w-[360px] ">
+    
+    <!-- body container
+        min-w-[370px]
+    -->
+    <div class="relative w-full max-w-sm mx-2 sm:max-w-7xl sm:mx-8">
+        
+        <!-- mobile dropdown menu-->
+        <div class="absolute right-0 z-10 grid content-between hidden w-full text-xl border-2 bg-slate-500 h-svh">
+            <!-- close button-->
+            <div class="justify-self-end">
+                <img src="/resources/close-button.svg" alt="close button">
+            </div>
+            
+            <!-- nav bar-->
+            <nav class="justify-self-center">
+                <!-- ul-->    
+                <ul class="flex flex-col items-center space-y-6">
+                    <li class="">
+                        <a href="#" class="">About us</a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="">Product</a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="">Resource</a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- dark mode toggle-->
+            <div class="flex mb-4 justify-self-center h-fit">
+                <input type="checkbox" id="toggleCheckbox" class="hidden">
+                <label for="toggleCheckbox" class="flex items-center py-0.5 px-1 rounded-2xl h-fit w-16 justify-between dark:bg-design-background-toggle">
+                    <svg id="moon" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15 4C15.292 4 15.438 4 15.5781 4.04183C16.192 4.22522 16.4775 4.93111 16.1637 5.48976C16.0921 5.61719 15.8744 5.82779 15.4389 6.249C13.935 7.70352 13 9.74257 13 12C13 14.2574 13.935 16.2965 15.4389 17.751C15.8744 18.1722 16.0921 18.3828 16.1637 18.5102C16.4775 19.0689 16.192 19.7748 15.5781 19.9582C15.438 20 15.292 20 15 20V20C10.5817 20 7 16.4183 7 12C7 7.58172 10.5817 4 15 4V4Z"
+                            fill="#223344" />
+                    </svg>
+                    <div class="p-1 bg-gray-100 rounded-2xl">
+                        <svg class="" id="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="sunColor" cx="12" cy="12" r="4" fill="#223344" />
+                            <path class="sunColor" d="M12 5V3" stroke="#223344" stroke-width="2" stroke-linecap="round" />
+                            <path class="sunColor" d="M12 21V19" stroke="#223344" stroke-width="2" stroke-linecap="round" />
+                            <path class="sunColor" d="M16.95 7.04996L18.3643 5.63574" stroke="#223344" stroke-width="2"
+                                stroke-linecap="round" />
+                            <path class="sunColor" d="M5.63608 18.3644L7.05029 16.9502" stroke="#223344" stroke-width="2"
+                                stroke-linecap="round" />
+                            <path class="sunColor" d="M19 12L21 12" stroke="#223344" stroke-width="2" stroke-linecap="round" />
+                            <path class="sunColor" d="M3 12L5 12" stroke="#223344" stroke-width="2" stroke-linecap="round" />
+                            <path class="sunColor" d="M16.95 16.95L18.3643 18.3643" stroke="#223344" stroke-width="2"
+                                stroke-linecap="round" />
+                            <path class="sunColor" d="M5.63608 5.63559L7.05029 7.0498" stroke="#223344" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    
+                    </div></label>
+            </div>
+            
+        </div>
+        
+        <!-- row-->
+            <!-- Header
+                justify-between: to push logo and button to the sides   
+            -->
+            <header class="flex items-center justify-between mt-8">
+                <div class="max-w-40">
+                    <img src="/resources/logo.png" alt="logo">
+                </div>
+                
+                <div class="bg-slate-300 sm:hidden">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="5" y="8" width="22" height="3" rx="1.5" fill="#223344"/>
+                        <rect x="5" y="15" width="22" height="3" rx="1.5" fill="#223344"/>
+                        <rect x="5" y="22" width="22" height="3" rx="1.5" fill="#223344"/>
+                    </svg>    
+                </div>
+                
+                <nav class="flex justify-between hidden min-w-96 sm:block">
+                    <ul class="flex justify-between">
+                        <li class="">
+                            <a href="#" class="hover:border-b-2 hover:text-design-background-blue hover:border-design-background-blue">About us</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="hover:border-b-2 hover:text-design-background-blue hover:border-design-background-blue">Product</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="hover:border-b-2 hover:text-design-background-blue hover:border-design-background-blue">Resource</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="hover:border-b-2 hover:text-design-background-blue hover:border-design-background-blue">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="flex hidden justify-self-center h-fit sm:block">
+                    <input type="checkbox" id="toggleCheckbox" class="hidden">
+                    <label for="toggleCheckbox" class="flex items-center py-0.5 px-1 rounded-2xl h-fit w-16 justify-between bg-design-background-toggle">
+                        <svg id="moon" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15 4C15.292 4 15.438 4 15.5781 4.04183C16.192 4.22522 16.4775 4.93111 16.1637 5.48976C16.0921 5.61719 15.8744 5.82779 15.4389 6.249C13.935 7.70352 13 9.74257 13 12C13 14.2574 13.935 16.2965 15.4389 17.751C15.8744 18.1722 16.0921 18.3828 16.1637 18.5102C16.4775 19.0689 16.192 19.7748 15.5781 19.9582C15.438 20 15.292 20 15 20V20C10.5817 20 7 16.4183 7 12C7 7.58172 10.5817 4 15 4V4Z"
+                                fill="#223344" />
+                        </svg>
+                        <div class="p-1 bg-gray-100 rounded-2xl">
+                            <svg class="" id="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="sunColor" cx="12" cy="12" r="4" fill="#223344" />
+                                <path class="sunColor" d="M12 5V3" stroke="#223344" stroke-width="2" stroke-linecap="round" />
+                                <path class="sunColor" d="M12 21V19" stroke="#223344" stroke-width="2" stroke-linecap="round" />
+                                <path class="sunColor" d="M16.95 7.04996L18.3643 5.63574" stroke="#223344" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <path class="sunColor" d="M5.63608 18.3644L7.05029 16.9502" stroke="#223344" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <path class="sunColor" d="M19 12L21 12" stroke="#223344" stroke-width="2" stroke-linecap="round" />
+                                <path class="sunColor" d="M3 12L5 12" stroke="#223344" stroke-width="2" stroke-linecap="round" />
+                                <path class="sunColor" d="M16.95 16.95L18.3643 18.3643" stroke="#223344" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <path class="sunColor" d="M5.63608 5.63559L7.05029 7.0498" stroke="#223344" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        
+                        </div>
+                    </label>
+                </div>
+            </header>
+            
+            <!-- main activates grid starting from sm-->
+            <main class="sm:mt-10 sm:grid-cols-2 sm:grid ">
+                
+                <!-- div of img  
+                    -> occupies column 2 using order-2    
+                    -> the div: use grid of 1 column" + self-center to center the img vetically 
+                        -> (self-center doesn't work without grid, especially when parent doesn't have fixed height)
+                    -> mr-0 so that it aligns left                
+                -->
+                <div class=" sm:grid sm:col-span-1 sm:order-2 sm:mr-0 sm:grid-cols-1">
+                    <!-- img
+                        mobile:
+                            w-full: to span full phone width
+                            max-width-64: so that it doesn't get too big visually
+                            mx-auto: to center
+                        sm:
+                            w-full
+                            max-width-sm
+                            sm: mx-0 to cancel mx-auto
+                            sm: ml-auto so it pushes img to the right
+                    -->
+                    <img class="self-center w-full mx-auto border-purple-300 sm:ml-auto max-w-64 sm:col-span-1 sm:order-2 sm:max-w-sm md:max-w-md sm:mx-0" src="/resources/hero-image-simple-homepage@2x.png" alt="Hero image">
+                </div>
+                
+                <!-- Call to Action section
+                    w-full: to take the full cell
+                -->
+                <div id="callToAction" class="w-full mt-4 sm:col-span-1 sm:order-1 sm:mt-0">
+                    <p class="text-xs font-medium lg:text-base">😎 SIMPLE WAY TO COMMUNICATE</p>
+                    
+                    <!-- Hook 
+                        tracking-wide : letter width
+                        leading-relaxed: between-line space
+                    -->
+                    <h1 class="text-4xl font-bold leading-loose tracking-wider mt-45 lg:leading-relaxed lg:text-6xl lg:mt-7 sm:text-5xl sm:leading-normal">Actions for <br> Accessibility <br> in Design</h1>
+                    <p class="mt-5 text-base font-medium dark:font-light lg:text-base max-w-80 sm:max-w-max lg:mt-4">The fastest way to build and deploy websites with reusable components.</p>
+                    
+                    <!-- buttons-->
+                    <div class="flex items-center mt-5 space-x-8 sm:mt-7">
+                        <a href="#" class="block px-5 py-2 text-lg bg-design-background-blue rounded-lg hover:bg-blue-600 hover:-translate-y-0.5 transition focus:outline-none focus:ring-blue-300 focus:ring focus:ring-offset-2 focus:ring-opacity-50 active:bg-blue-800 tracking-wider text-gray-100" id="getStarted">GET STARTED</a>
+                        <a href="#" class="transition border-b-2 border-design-background-blue text-md hover:-translate-y-0.5 text-design-background-blue dark:text-gray-100 dark:border-gray-100 dark:font-medium font-semibold" id="getLive">Get live demo</a>    
+                    </div>
+
+                    <!-- no credit card-->
+                    <ul class="flex p-0 m-0 space-x-4 text-xs font-normal dark:font-light mt-7 sm:space-x-10 lg:text-base sm:mt-7" id="creditCard">
+                        <li class="flex items-center">
+                            <div class=" min-w-7">
+                                <svg  class="ml-0 sm:mr-3" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21C16.9706 21 21 16.9706 21 12C21 10.1666 20.4518 8.46124 19.5103 7.03891L12.355 14.9893C11.6624 15.7589 10.4968 15.8726 9.66844 15.2513L6.4 12.8C5.95817 12.4686 5.86863 11.8418 6.2 11.4C6.53137 10.9582 7.15817 10.8686 7.6 11.2L10.8684 13.6513L18.214 5.48955C16.5986 3.94717 14.4099 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" fill="#4CA154"/>
+                                </svg>
+                                </div>                            
+                            No credit card required
+                        </li>
+                        
+                        <li class="flex items-center">
+                            <div class=" min-w-7">
+                                <svg class="ml-0 sm:mr-3" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21C16.9706 21 21 16.9706 21 12C21 10.1666 20.4518 8.46124 19.5103 7.03891L12.355 14.9893C11.6624 15.7589 10.4968 15.8726 9.66844 15.2513L6.4 12.8C5.95817 12.4686 5.86863 11.8418 6.2 11.4C6.53137 10.9582 7.15817 10.8686 7.6 11.2L10.8684 13.6513L18.214 5.48955C16.5986 3.94717 14.4099 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" fill="#4CA154"/>
+                                </svg>
+                            </div>
+                            No software to install
+                        </li>
+                    </ul>
+
+                </div>
+            </main>
+            </div>
+   
+    <script src="javascript.js"></script>
+  </body>
+</html>
